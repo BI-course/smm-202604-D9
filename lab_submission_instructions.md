@@ -1,4 +1,4 @@
-# Lab Submission Instructions
+﻿# Lab Submission Instructions
 
 ## Student Details and Individual Member Contributions
 
@@ -70,9 +70,9 @@ Fill in only the rows that apply to your chosen difficulty level (see Part C bel
 
 | **Deployment target**                             | **URL** |
 |:--------------------------------------------------|:--------|
-| Render (the full `api.py`, all endpoints)         |         |
+| Render (the full `api.py`, all endpoints)         |  https://dashboard.render.com/web/srv-dbd0imhsrm7s73b7ldh0       |
 | Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) |         |
+| Streamlit Community Cloud app (one tab per model) |https://smm-202604-d9.streamlit.app/         |
 
 ---
 
