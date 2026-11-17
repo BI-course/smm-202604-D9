@@ -24,9 +24,10 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |     136261        |       
-| **Name**                                                                                                                                 |    Onyx Courtney          |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Developed the core Flask REST API (api.py) with robust error handling and artifact loading. Configured the multi-container Docker environment, multi-stage Dockerfile, and Nginx reverse proxy setup.Handled cloud deployments (Render web service configuration and Streamlit Community Cloud integration).            |
+| **Student ID**                                                                                                                        |       136261      |
+| **Name**                                                                                                                              |  Onyx Courtney           |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Developed the core Flask REST API (api.py) with robust error handling and artifact loading. Configured the multi-container Docker environment, multi-stage Dockerfile, and Nginx reverse proxy setup. Handled cloud deployments (Render web service configuration and Streamlit Community Cloud integration).<br/><br/>**Branch link:** [onyx-courtney-infrastructure](https://github.com/BI-course/smm-202604-D9/tree/onyx-courtney-infrastructure)<br/><br/>**What I learned:** I learned how to bridge the gap between a local ML model and a production environment by serving it via Gunicorn behind an Nginx reverse proxy, and how to manage cloud deployments across multiple platforms.            |
+
 
 **Member 4:**
 
