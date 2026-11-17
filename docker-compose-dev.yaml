@@ -32,8 +32,8 @@ services:
       context: .
       dockerfile: ./dockerfiles/Dockerfile.nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
     volumes:
       # Bind-mounting nginx.conf and the certs (both read-only, ":ro") means
       # you can edit nginx.conf or regenerate the certificate on your host

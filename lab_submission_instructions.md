@@ -24,9 +24,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |     136261        |       
+| **Name**                                                                                                                                 |    Onyx Courtney          |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Developed the core Flask REST API (api.py) with robust error handling and artifact loading. Configured the multi-container Docker environment, multi-stage Dockerfile, and Nginx reverse proxy setup.Handled cloud deployments (Render web service configuration and Streamlit Community Cloud integration).            |
 
 **Member 4:**
 
