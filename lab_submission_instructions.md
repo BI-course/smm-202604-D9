@@ -14,11 +14,13 @@
 
 **Member 2:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                  | **Comment** |
+| **154356**                                                                                                   |             |
+| **Nelson Nyambega*                                                                                           |             |
+(Classification model and Risk Scoring)
+Implemented the SME Credit Risk Classifier (SVC) pipeline.
+Handled feature inputs for financial ratios, credit scores, debt-to-income metrics, and probability output mapping for risk categories.
+Rigorously tested classification edge cases across different SME sectors. https://github.com/BI-course/smm-202604-D9/tree/feature/nelson-sandbox, and what did you learn from it?**                                                         |             |
 
 **Member 3:**
 
