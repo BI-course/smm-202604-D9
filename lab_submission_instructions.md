@@ -1,4 +1,4 @@
-# Lab Submission Instructions
+﻿# Lab Submission Instructions
 
 ## Student Details and Individual Member Contributions
 
@@ -14,37 +14,42 @@
 | **Individual Contribution and Learning** | Developed the Mall Customer Segmentation (K-Means) model and preprocessing scaler. Implemented distance scaling and cluster centroid mapping to assign customer profiles using Age, Annual Income and Spending Score to distinct segments. Integrated the clustering model into the machine learning API and Streamlit application. Gained practical experience in K-Means clustering, feature scaling, centroid mapping and deploying machine learning models through REST APIs and interactive applications. |
 | **Branch** | [emmanuel-member-details](https://github.com/BI-course/smm-202604-D9/tree/emmanuel-member-details) |
 
+
 **Member 2:**
 
-| **Details**                                                                                                                           | **Comment** |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:---|:---|
+| **Student ID** | 154356 |
+| **Name** | Nelson Nyambega |
+| **Individual Contribution and Learning** | Implemented the SME Credit Risk Classifier (SVC) pipeline. Handled feature inputs for financial ratios, credit scores, debt-to-income metrics and probability output mapping for risk categories. Rigorously tested classification edge cases across different SME sectors. |
+| **Branch** | [feature/nelson-sandbox](https://github.com/BI-course/smm-202604-D9/tree/feature/nelson-sandbox) |
 
 **Member 3:**
 
-| **Details**                                                                                                                           | **Comment** |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:---|:---|
+| **Student ID** | 136261 |
+| **Name** | Onyx Courtney |
+| **Individual Contribution and Learning** | Developed the core Flask REST API (api.py) with robust error handling and artifact loading. Configured the multi-container Docker environment, multi-stage Dockerfile and Nginx reverse proxy setup. Handled cloud deployments (Render web service configuration and Streamlit Community Cloud integration). Learned how to serve machine learning models using Gunicorn behind Nginx and manage cloud deployments across multiple platforms. |
+| **Branch** | [onyx-courtney-infrastructure](https://github.com/BI-course/smm-202604-D9/tree/onyx-courtney-infrastructure) |
 
 **Member 4:**
 
-| **Details**                                                                                                                           | **Comment** |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:---|:---|
+| **Student ID** | 147040 |
+| **Name** | Imran Hussein Issak |
+| **Individual Contribution and Learning** | Built, trained and optimized the SME Revenue Regressor (Lasso) model pipeline. Managed log transformations (np.expm1), ordinal encoding for owner education levels and numerical feature scaling. Verified regression inference logic for the first tab of the application. Learned how to build and optimize a Lasso regression model, perform feature engineering and integrate the model into an application for revenue predictions. |
+| **Branch** | [imran-hussein](https://github.com/BI-course/smm-202604-D9/tree/imran-hussein) |
 
 **Member 5:**
 
-| **Details**                                                                                                                           | **Comment** |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:---|:---|
+| **Student ID** | 157872 |
+| **Name** | Bradley Juma |
+| **Individual Contribution and Learning** | Engineered the Apriori Association Rule Mining (ARM) recommendation engine. Constructed the product lookup dictionary (sku_lookup) and confidence/lift filtering logic for e-commerce shopping cart recommendations. Learned how to tune minimum support thresholds, use lift filtering to improve recommendations and map product SKUs to readable product names using a lookup dictionary. |
+| **Branch** | [bradley-juma](https://github.com/BI-course/smm-202604-D9/tree/bradley-juma) |
 
 ## Chosen Level of Difficulty
 
@@ -70,12 +75,11 @@ Note that you are required to submit the link to the video and NOT the video its
 
 Fill in only the rows that apply to your chosen difficulty level (see Part C below). Leave a row blank if your tier does not require that deployment target.
 
-| **Deployment target**                             | **URL** |
-| :------------------------------------------------ | :------ |
-| Render (the full `api.py`, all endpoints)         |         |
-| Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) |         |
-
+| **Deployment target** | **URL** |
+|:---|:---|
+| Render (the full `api.py`, all endpoints) | https://smm-202604-d9.onrender.com |
+| Hugging Face Space (Gradio, one tab per model) | |
+| Streamlit Community Cloud app (one tab per model) | https://smm-202604-d9.streamlit.app/ |
 ---
 
 ## Scenario
