@@ -1,4 +1,4 @@
-# Lab Submission Instructions
+﻿# Lab Submission Instructions
 
 ## Student Details and Individual Member Contributions
 
@@ -26,25 +26,30 @@ Rigorously tested classification edge cases across different SME sectors. https:
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |       136261      |
+| **Name**                                                                                                                              |  Onyx Courtney           |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Developed the core Flask REST API (api.py) with robust error handling and artifact loading. Configured the multi-container Docker environment, multi-stage Dockerfile, and Nginx reverse proxy setup. Handled cloud deployments (Render web service configuration and Streamlit Community Cloud integration).<br/><br/>**Branch link:** [onyx-courtney-infrastructure](https://github.com/BI-course/smm-202604-D9/tree/onyx-courtney-infrastructure)<br/><br/>**What I learned:** I learned how to bridge the gap between a local ML model and a production environment by serving it via Gunicorn behind an Nginx reverse proxy, and how to manage cloud deployments across multiple platforms.            |
+
 
 **Member 4:**
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |      147040       |
+| **Name**                                                                                                                              |     Imran Hussein Issak        |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |      Built, trained, and optimized the SME Revenue Regressor (Lasso) model pipeline. Managed log-transformations (np.expm1), ordinal encoding for owner education levels, and numerical feature scaling.
+
+Verified regression inference logic for the first tab of the app. https://github.com/BI-course/smm-202604-D9/tree/imran-hussein
+
+I learned how to build, train, and optimize a Lasso regression model, perform feature engineering through log transformations, ordinal encoding and numerical scaling, and integrate the model into an application for making revenue predictions.        |
 
 **Member 5:**
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |   157872          |
+| **Name**                                                                                                                              |   Bradley Juma          |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |    Engineered the Apriori Association Rule Mining (ARM) recommendation engine.Constructed the product lookup dictionary (sku_lookup) and confidence/lift filtering logic for the e-commerce shopping cart recommendations.<br/><br/>**Branch link:** https://github.com/BI-course/smm-202604-D9/tree/bradley-juma <br/><br/>**What I learned:** I learnt the real work in Apriori is choosing thresholds. If you set minimum support too high, the useful rules disappeared; too low and I got thousands of weak, noisy ones, so I had to tune it to the dataset instead of trusting defaults. Adding lift filtering taught me that confidence alone misleads, since a rule can score high just because the consequent item is popular everywhere.Building the sku_lookup dictionary taught me to connect mining output to something usable, because the algorithm works on SKUs but the cart needs readable product names, and a dictionary gave fast lookups at recommendation time.         |
 
 ## Chosen Level of Difficulty
 
@@ -72,9 +77,9 @@ Fill in only the rows that apply to your chosen difficulty level (see Part C bel
 
 | **Deployment target**                             | **URL** |
 |:--------------------------------------------------|:--------|
-| Render (the full `api.py`, all endpoints)         |         |
+| Render (the full `api.py`, all endpoints)         |  https://dashboard.render.com/web/srv-dbd0imhsrm7s73b7ldh0       |
 | Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) |         |
+| Streamlit Community Cloud app (one tab per model) |https://smm-202604-d9.streamlit.app/         |
 
 ---
 

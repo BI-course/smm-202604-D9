@@ -6,12 +6,12 @@ import spaces
 
 # -----------------------------------------------------------------------
 # Hugging Face's free tier now provisions new Gradio Spaces on ZeroGPU
-# hardware only (see the note in Step 2 below). None of this app's four
-# models needs a GPU -- every prediction below runs on plain scikit-learn
-# arrays -- but some free-tier Spaces fail to start reliably unless at
-# least one function is decorated with @spaces.GPU. This function does
-# nothing GPU-related; it exists only to satisfy that platform check.
-# Calling it once, here, registers it before Gradio launches below.
+# hardware only. None of this app's four models needs a GPU -- every
+# prediction runs on plain scikit-learn arrays -- but some free-tier
+# Spaces fail to start reliably unless at least one function is decorated
+# with @spaces.GPU. This function does nothing GPU-related; it exists
+# only to satisfy that platform check.
+# -----------------------------------------------------------------------
 @spaces.GPU
 def _warm_zerogpu():
     return None
@@ -20,8 +20,7 @@ _warm_zerogpu()
 
 # -----------------------------------------------------------------------
 # Load all four persisted artifacts ONCE, at import time -- the same
-# principle api.py uses: load once at startup, reuse across every request
-# (here, across every tab and every submit click), never inside a function.
+# principle api.py uses: load once at startup, reuse across every request.
 # -----------------------------------------------------------------------
 regression_pipeline = joblib.load("lasso_regressor_for_sme_revenue.joblib")
 classification_pipeline = joblib.load("svc_classifier_for_sme_credit_risk.joblib")
@@ -48,9 +47,7 @@ def predict_revenue(sector, county, quarter, business_age_years, num_employees,
         "business_age_years": business_age_years, "num_employees": num_employees,
         "owner_education_level": owner_education_level,
         "monthly_marketing_spend_kes": monthly_marketing_spend_kes,
-        # A Gradio Number field cannot submit a literal null; 0 is used here
-        # as a stand-in for "not applicable" when the field is left blank.
-        "avg_daily_foot_traffic": avg_daily_foot_traffic or None,
+        "avg_daily_foot_traffic": avg_daily_foot_traffic if avg_daily_foot_traffic > 0 else None,
         "online_presence_score": online_presence_score,
         "loan_amount_kes": loan_amount_kes, "interest_rate_pct": interest_rate_pct,
         "inflation_rate_pct": inflation_rate_pct,
@@ -79,7 +76,7 @@ def predict_credit_risk(sector, county, quarter, loan_purpose, owner_education_l
         "business_age_years": business_age_years, "num_employees": num_employees,
         "monthly_revenue_kes": monthly_revenue_kes, "loan_amount_kes": loan_amount_kes,
         "loan_term_months": loan_term_months, "interest_rate_pct": interest_rate_pct,
-        "collateral_value_kes": collateral_value_kes or None,
+        "collateral_value_kes": collateral_value_kes if collateral_value_kes > 0 else None,
         "debt_to_income_ratio": debt_to_income_ratio, "credit_score": credit_score,
         "num_previous_loans": num_previous_loans,
         "missed_payments_count": missed_payments_count,
@@ -137,11 +134,10 @@ def recommend_products(cart_text, top_n):
 
 
 # -----------------------------------------------------------------------
-# One gr.Blocks() app, four gr.Tab()s -- one shared Space URL, no linking
-# between separately-hosted demos required.
+# One gr.Blocks() app, four gr.Tab()s -- one shared Space URL
 # -----------------------------------------------------------------------
-with gr.Blocks(title="BBT 4206 Model Validation Demos") as demo:
-    gr.Markdown("# BBT 4206 -- Model Validation Demos\nSwitch tabs to try a different model.")
+with gr.Blocks(title="Group D9 Model Validation Demos") as demo:
+    gr.Markdown("# Group D9 -- Model Validation Demos\nSwitch tabs to try a different model.")
 
     with gr.Tab("SME Revenue Regressor"):
         gr.Interface(
@@ -152,9 +148,6 @@ with gr.Blocks(title="BBT 4206 Model Validation Demos") as demo:
                 gr.Textbox(label="Quarter", value="Q3"),
                 gr.Number(label="Business Age (years)", value=4.5),
                 gr.Number(label="Number of Employees", value=12),
-                # These four categories are the exact set the pipeline's
-                # OrdinalEncoder was fitted on -- any other string raises
-                # "Found unknown categories" at predict time.
                 gr.Dropdown(label="Owner Education Level",
                             choices=["Primary", "Secondary", "Tertiary", "Postgraduate"],
                             value="Secondary"),
