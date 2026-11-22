@@ -2,20 +2,22 @@
 
 ## Student Details and Individual Member Contributions
 
-**Name of the team on GitHub Classroom:**
+**Name of the team on GitHub Classroom:** smm-202604-D9
+
 
 **Member 1:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:---|:---|
+| **Student ID** | 166387 |
+| **Name** | Emmanuel Kiongo Mwai |
+| **Individual Contribution and Learning** | Developed the Mall Customer Segmentation (K-Means) model and preprocessing scaler. Implemented distance scaling and cluster centroid mapping to assign customer profiles using Age, Annual Income and Spending Score to distinct segments. Integrated the clustering model into the machine learning API and Streamlit application. Gained practical experience in K-Means clustering, feature scaling, centroid mapping and deploying machine learning models through REST APIs and interactive applications. |
+| **Branch** | [emmanuel-member-details](https://github.com/BI-course/smm-202604-D9/tree/emmanuel-member-details) |
 
 **Member 2:**
 
 | **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
 | **Student ID**                                                                                                                        |             |
 | **Name**                                                                                                                              |             |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
@@ -23,7 +25,7 @@
 **Member 3:**
 
 | **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
 | **Student ID**                                                                                                                        |             |
 | **Name**                                                                                                                              |             |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
@@ -31,7 +33,7 @@
 **Member 4:**
 
 | **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
 | **Student ID**                                                                                                                        |             |
 | **Name**                                                                                                                              |             |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
@@ -39,7 +41,7 @@
 **Member 5:**
 
 | **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------- |
 | **Student ID**                                                                                                                        |             |
 | **Name**                                                                                                                              |             |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
@@ -69,7 +71,7 @@ Note that you are required to submit the link to the video and NOT the video its
 Fill in only the rows that apply to your chosen difficulty level (see Part C below). Leave a row blank if your tier does not require that deployment target.
 
 | **Deployment target**                             | **URL** |
-|:--------------------------------------------------|:--------|
+| :------------------------------------------------ | :------ |
 | Render (the full `api.py`, all endpoints)         |         |
 | Hugging Face Space (Gradio, one tab per model)    |         |
 | Streamlit Community Cloud app (one tab per model) |         |
@@ -133,7 +135,7 @@ Why this is production-relevant beyond the model itself:
 
 - **Portability:** the same container image and the same trained artifacts run unmodified on your laptop, inside Docker, and on a managed cloud host.
 - **Consistency:** no "but it works on my machine" gap between what you demo locally and what a domain expert sees on a public URL.
-- **Separation of concerns:** a REST API (Render), a no-code demo UI (Hugging Face/Streamlit), and your own frontend (the Advanced-tier HTML pages) are three different ways of exposing the *same* underlying models to three different kinds of user -- a developer integrating your API, a non-technical domain expert validating it, and an end customer.
+- **Separation of concerns:** a REST API (Render), a no-code demo UI (Hugging Face/Streamlit), and your own frontend (the Advanced-tier HTML pages) are three different ways of exposing the _same_ underlying models to three different kinds of user -- a developer integrating your API, a non-technical domain expert validating it, and an end customer.
 
 ---
 
