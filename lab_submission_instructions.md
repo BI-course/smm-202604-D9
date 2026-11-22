@@ -33,6 +33,18 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+imran-hussein
+| **Student ID**                                                                                                                        |       147040      |
+| **Name**                                                                                                                              |    Imran Hussein Issak         |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Built, trained, and optimized the SME Revenue Regressor (Lasso) model pipeline.
+
+Managed log-transformations (np.expm1), ordinal encoding for owner education levels, and numerical feature scaling.
+
+Verified regression inference logic for the first tab of the app.
+https://github.com/BI-course/smm-202604-D9/tree/imran-hussein
+
+I learned how to build, train, and optimize a Lasso regression model, perform feature engineering through log transformations, ordinal encoding and numerical scaling, and integrate the model into an application for making revenue predictions.          |
+=======
 | **Student ID**                                                                                                                        |      147040       |
 | **Name**                                                                                                                              |     Imran Hussein Issak        |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |      Built, trained, and optimized the SME Revenue Regressor (Lasso) model pipeline. Managed log-transformations (np.expm1), ordinal encoding for owner education levels, and numerical feature scaling.
@@ -40,6 +52,7 @@
 Verified regression inference logic for the first tab of the app. https://github.com/BI-course/smm-202604-D9/tree/imran-hussein
 
 I learned how to build, train, and optimize a Lasso regression model, perform feature engineering through log transformations, ordinal encoding and numerical scaling, and integrate the model into an application for making revenue predictions.        |
+ main
 
 **Member 5:**
 
